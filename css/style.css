@@ -30,7 +30,7 @@ body {
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .menu {
@@ -42,10 +42,10 @@ body {
 
 .line {
   position: relative;
-  top: 21px;
+  top: 25px;
   height: 1px;
   background-color: white;
-  opacity: 0.3;
+  opacity: 0.15;
   z-index: 3;
 }
 
@@ -67,7 +67,7 @@ body {
 .top-menu li {
   display: inline-block;
   margin-right: 64px;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
 }
 
 .active {
@@ -102,6 +102,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: -18px;
+  padding-top: 3px;
 }
 
 .header-text p {
@@ -109,7 +110,7 @@ h1 {
   font-family: Georgia;
   font-size: 32px;
   font-style: italic;
-  line-height: 14px;  
+  line-height: 16px;  
 }
 
 
@@ -118,7 +119,7 @@ h1 {
   height: 122px;
   background-color: #21424a;
   font-family: Lato;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
   min-width: 1600px;
@@ -129,13 +130,13 @@ h1 {
   position: absolute;
   top: 0px;   
   width: 51%;
-  right: -15px;
-  height: 120px;
+  right: -12px;
+  height: 122px;
   background: #2fac6c;
   -webkit-transform: skew(165deg);
   -moz-transform: skew(165deg);
   -o-transform: skew(165deg);
-  transform: skew(165deg);
+  transform: skew(167deg);
   z-index: 0;
   overflow: hidden;
 }
@@ -147,23 +148,31 @@ h1 {
   -o-transform: skew(15deg);
   transform: skew(15deg);
   z-index: 0;
-  margin-top: 50px;
+  margin-top: 48px;
   color: white;
-  margin-left: 31%;
+  margin-left: 31.2%;
 }
 
 
 .login {
-  margin-top: 50px;
+  margin-top: 48px;
   color: #ffffff;
-  margin-left: 30.5%;
+  margin-left: 29.4%;
   display: inline-block;
   text-decoration: none;
+}
+
+.login:hover {
+  color: #000000;
 }
 
 .register {
   color: white;
   text-decoration: none;
+}
+
+.register:hover {
+  color: #000000;
 }
 
 .domain {
@@ -187,29 +196,31 @@ h1 {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 200;
+  padding-top: 4px;
+  padding-left: 4px;
 }
 
 .domain .www {
   display: inline-block;
   font-family: Lato;
   float: left;
-  margin-top: 7px;
+  margin-top: 5px;
   font-size: 15px;
   font-weight: 400;
   color: #cbcbcb;
   margin-right: 20px;
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .domain-form .www::after{
   content: "";
   display: inline-block;
-  height: 32px;
+  height: 30px;
   background-color: #d9d9d9;
   width: 1px;
   position: absolute;
   top: 10px;
-  left: 67px;
+  left: 70px;
 }
 
 .domain-form {
@@ -217,8 +228,10 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 9px;
   position: relative;
-  width: 875px;
-  margin-top: 35px;
+  width: 868px;
+  margin-top: 32px;
+  margin-left: 0px;
+  height: 30px;
 }
 
 .domain-form input {
@@ -227,11 +240,12 @@ h1 {
   font-family: Lato;
   font-size: 15px;
   font-weight: 700;
-  color: #868686;
+  color: #a2a2a2;
   padding: 7px;
   display: inline-block;
-  width: 720px;
-  padding-left: 5px;  
+  width: 700px;
+  padding-left: 12px;
+  padding-top: 5px;
 }
 
 .zone::before {
@@ -242,18 +256,16 @@ h1 {
   width: 1px;
   position: absolute;
   top: -6px;
-  left: -15px;
+  left: -16px;
 }
 
 .zone {
   position: absolute;
-  top: 0px;
-  right: 0px;
   display: inline-block;
   background: url("../img/fa-angle-down.png") no-repeat right center;
   vertical-align: middle;
-  top: 15px;
-  right: 30px;
+  top: 14px;
+  right: 16px;
   
 }
 
@@ -544,24 +556,28 @@ h1 {
 }
 
 .fas {
-  font-family: "Font Awesome";
-  font-size: 17px;
-  font-weight: 400;
+  /* padding-right: 6px; */
 }
 
 .fa-anchor {
+  font-size: 17px;
   color: #f9d423;
 }
 
 .fa-star-half-alt {
+  font-size: 14px;
   color: #7f8c8d;
+  padding-right: 8px;
+  padding-top: 0px;
 }
 
 .fa-star {
   color: #f85f40;
+  padding-right: 4px;
 }
 
 .fa-gem {
+  padding-right: 4px;
   color: #1abc9c;
 }
 
@@ -675,6 +691,8 @@ h1 {
   font-weight: 900;
   text-align: left;
   margin: 0px;
+  margin-left: -4px;
+  margin-top: 1px;
 }
 
 .about-us .abouts-us-us {
@@ -754,11 +772,17 @@ h1 {
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 11px;
+  margin-top: -3px;
 }
 
 .person .social {
   color: #bfbfbf;
-  font-size: 14px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.person .social:last-child {
+  margin-right: 0px;
 }
 
 .person .active {
@@ -841,16 +865,17 @@ h1 {
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
-  width: 886px;
+  width: 890px;
   text-align: center;
   margin-bottom: 21px;
-  padding-top: 45px;
+  padding-top: 47px;
 }
 
 .slide .author-and-slide {
   width: 200px;
   position: absolute;
-  left: 40%;
+  left: 37.9%;
+  bottom: 50px;
 }
 
 .slide span {
@@ -860,7 +885,8 @@ h1 {
   font-weight: 700;
   line-height: 20px;
   display: inline-block;
-  padding-right: 20px;
+  /* padding-right: 34px;
+  margin-bottom: 10px; */
   float: right;
 }
 
@@ -872,7 +898,7 @@ h1 {
   width: 1px;
   position: absolute;
   top: 3px;
-  left: 191px;
+  left: 212px;
 }
 
 input:checked + .slide-container  .slide {
@@ -885,7 +911,7 @@ input:checked + .slide-container  .slide {
 
 .nav-dots {
   bottom: 48px;
-  left: 52.5%;
+  left: 51.7%;
 	height: 11px;
 	display: block;
 	position: absolute;
@@ -893,9 +919,9 @@ input:checked + .slide-container  .slide {
 }
 
 .nav-dots .nav-dot {
-	top: -5px;
-	width: 4px;
-	height: 4px;
+	top: -10px;
+	width: 6px;
+	height: 6px;
 	margin: 0 4px;
 	position: relative;
 	border-radius: 100%;
@@ -956,7 +982,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
   background-color: #f1c40f;
   border-radius: 50%;
   position: absolute;
-  left: 80px;
+  left: 82px;
   top: -16px;
   z-index: -1;
 }
@@ -980,6 +1006,8 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
   font-family: Lato;
   font-size: 18px;
   font-weight: 800;
+  margin-bottom: 2px;
+  margin-left: 0px;
 }
 
 .feature p {
@@ -1019,7 +1047,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
   margin: 0px;
   display: inline-block;
   float: right;
-  padding-top: 27px;
+  padding-top: 29px;
 }
 
 .footer-head ul {
@@ -1028,7 +1056,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
 
 .footer-head li {
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 43px;
 }
 
 .footer-head li:last-child {
@@ -1062,7 +1090,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
   width: 294px;
   text-align: left;
   float: left;
-  padding: 22px 84px 22px 0px;
+  padding: 17px 84px 22px 0px;
   border-right: 1px solid #393939;
   margin-top: 34px;
 }
@@ -1074,6 +1102,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
   font-weight: 300;
   margin: 0px;
   line-height: 26px;
+  padding-bottom: 12px;
 }
 
 .footer-bottom .info span .designer {
@@ -1149,7 +1178,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
 }
 
 .footer-bottom .footer-links .bottom-active-link {
-  padding-left: 4px;
+  padding-left: 7px;
   color: #ffffff;
 }
 
@@ -1171,6 +1200,7 @@ input#img-3:checked ~ .nav-dots label#img-dot-3 {
 .footer-bottom .contacts ul {
   float: left;
   padding: 0px;
+  padding-top: 2px;
   margin: 0px;
 }
 
